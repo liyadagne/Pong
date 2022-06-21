@@ -1,13 +1,14 @@
-Padle p;
+PadleA pa;
+PadleB pb;
 
 int x;
 void setup(){
   //canvas
   size(800,800);
-  p=new Padle();
+  pa=new PadleA();
+  pb=new PadleB();
   x = 0;
-  p=new Padle();
-
+ 
 }
 
 void draw(){
@@ -18,9 +19,30 @@ void draw(){
   line(120,80, 500, 300);
     fill(255,255,255);
 
-      p.drawPadle();
- p.movePadle();
+      pa.drawPadle();
+ pa.movePadle();
+     pb.drawPadle();
+ pb.movePadle();
 
   
   
+}
+void keyPressed(){
+ if (keyCode==RIGHT){
+   pa.directionChange("right");
+     
+ }
+   if(keyCode==LEFT){
+   pa.directionChange("Left");
+  
+
+}
+if (keyCode==68){
+   pb.directionChange("right");
+     
+ }
+ if (keyCode==65){
+   pb.directionChange("Left");
+     
+ }
 }

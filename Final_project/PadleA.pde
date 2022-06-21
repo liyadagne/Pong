@@ -1,12 +1,12 @@
-public class Padle{
+public class PadleA{
   int x;
   int y;
   int a;
   int d;
 String currentDirection;
-  public Padle(){
+  public PadleA(){
  x=250;
- y=90;
+ y=60;
  currentDirection="right";
    }
    
@@ -19,3 +19,9 @@ String currentDirection;
        x = x + 1;
         }else if(currentDirection == "Left"){
       x = x - 1; 
+        }
+   }
+public void directionChange(String d){
+  currentDirection=d;
+}
+   }
