@@ -7,10 +7,19 @@ String currentDirection;
   public Padle(){
  x=250;
  y=90;
+ currentDirection="right";
    }
    
    public void drawPadle(){
      fill(0,225,0);
      rect(x,y,300,40);
    }
-}
+   public void movePadle(){
+     if (currentDirection == "right"){
+       x = x + 1;
+        }else if(currentDirection == "Left"){
+      x = x - 1; 
+        }
+   }
+
+   }

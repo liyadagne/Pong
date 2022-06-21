@@ -1,9 +1,5 @@
 Padle p;
-<<<<<<< HEAD
 
-
-=======
->>>>>>> c73b3892434af06781d37b6876115ab4e45ba6e9
 int x;
 void setup(){
   //canvas
@@ -21,17 +17,10 @@ void draw(){
   fill(255,255,255);
   line(120,80, 500, 300);
     fill(255,255,255);
-<<<<<<< HEAD
-      p.drawPadle();
 
-=======
-p.padleA();
->>>>>>> c73b3892434af06781d37b6876115ab4e45ba6e9
+      p.drawPadle();
+ p.movePadle();
+
   
   
 }
-void keyPressed(){
-  if (keyCode==RIGHT)
-  {p.pD(1);}
-    if (keyCode==LEFT)
-  {p.pD(2);}}
