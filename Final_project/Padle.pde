@@ -5,12 +5,12 @@ public class Padle{
   int d;
 String currentDirection;
   public Padle(){
- x=400;
- y=130;
+ x=250;
+ y=90;
    }
    
    public void drawPadle(){
      fill(0,225,0);
-     rect(x,y,40,200);
+     rect(x,y,300,40);
    }
 }
