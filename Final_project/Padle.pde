@@ -1,4 +1,4 @@
-public class Padle{
+/*public class Padle{
   int x;
   int y;
   int a;
@@ -16,6 +16,6 @@ String currentDirection;
    }
    public void movePadle(){
      if (currentDirection == "right"){
-       x = x + 1;
+       x = x + 3;
         }else if(currentDirection == "Left"){
-      x = x - 1; 
+      x = x - 3; */

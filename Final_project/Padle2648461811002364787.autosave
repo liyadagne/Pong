@@ -1,27 +1,33 @@
-public class PadleA{
+public class Padle{
   int x;
   int y;
   int a;
   int d;
 String currentDirection;
-  public PadleA(){
+  public Padle(){
  x=250;
- y=60;
+ y=90;
  currentDirection="right";
    }
    
    public void drawPadle(){
      fill(0,225,0);
-     rect(x,y,300,40);
+     rect(x,y,300,30);
    }
    public void movePadle(){
      if (currentDirection == "right"){
-       x = x + 2;
+       x = x + 1;
         }else if(currentDirection == "Left"){
-      x = x - 2; 
+      x = x - 1; 
         }
    }
-public void directionChange(String d){
-  currentDirection=d;
-}
+   public void changeDirection(int keyNum){
+   if(keyNum == 39){
+      currentDirection = "Right";
+}else if(keyNum == 37){
+      currentDirection = "Left";
+    }
+
+
    }
+}

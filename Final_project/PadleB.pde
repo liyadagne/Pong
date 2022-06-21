@@ -16,9 +16,9 @@ String currentDirection;
    }
    public void movePadle(){
      if (currentDirection == "right"){
-       x = x + 1;
+       x = x + 2;
         }else if(currentDirection == "Left"){
-      x = x - 1; 
+      x = x - 2; 
         }
    }
 public void directionChange(String d){
