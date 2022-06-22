@@ -31,6 +31,7 @@ pc.movePadlea();
 }
 
 void keyPressed(){
+<<<<<<< HEAD
  if (keyCode==RIGHT){
    pc.directionChangea("right");
      
@@ -45,6 +46,22 @@ if (keyCode==68){
  }
  if (keyCode==65){
    pc.directionChangeb("Left");
+=======
+ if (keyCode==68){
+   pa.directionChange("right");
+     
+ }
+   if(keyCode==65){
+   pa.directionChange("Left");
+ 
+}
+if (keyCode==RIGHT){
+   pb.directionChange("right");
+     
+ }
+ if (keyCode==LEFT){
+   pb.directionChange("Left");
+>>>>>>> 0792748d0e9a6ba2be38d5917cfb513c1d31b083
      
  }
 }
