@@ -22,29 +22,29 @@ void draw(){
  background(0,0,0);
       
      //padle 
- pa.drawPadle();
-pa.movePadle();
- pb.drawPadle();
- pb.movePadle();
+ pc.drawPadlea();
+pc.movePadlea();
+ pc.drawPadleb();
+ pc.movePadleb();
 
  pc.drawCircle();
 }
 
 void keyPressed(){
  if (keyCode==RIGHT){
-   pa.directionChange("right");
+   pc.directionChangea("right");
      
  }
    if(keyCode==LEFT){
-   pa.directionChange("Left");
+   pc.directionChangea("Left");
  
 }
 if (keyCode==68){
-   pb.directionChange("right");
+   pc.directionChangeb("right");
      
  }
  if (keyCode==65){
-   pb.directionChange("Left");
+   pc.directionChangeb("Left");
      
  }
 }

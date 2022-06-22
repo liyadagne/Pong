@@ -1,4 +1,4 @@
-public class PadleB{
+/*public class PadleB{
   int x;
   int y;
   int a;
@@ -24,4 +24,4 @@ String currentDirection;
 public void directionChange(String d){
   currentDirection=d;
 }
-   }
+   }*/
