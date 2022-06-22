@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public class Circle{
   int rad;        // Width of the shape
   float xpos;    // Starting position of shape    
@@ -24,7 +8,7 @@ public class Circle{
   
   int xdirection;  // Left or Right
   int ydirection;
-<<<<<<< HEAD
+
   int xa;
   int ya;
   int aa;
@@ -37,10 +21,10 @@ int xb;
 String currentDirectionb;
      
   
-=======
+
 int r=0, g=0, b=0;
 
->>>>>>> 0792748d0e9a6ba2be38d5917cfb513c1d31b083
+
   public Circle(){
        xa=250;
  ya=60;
@@ -49,8 +33,8 @@ int r=0, g=0, b=0;
     rad = 20;
     xpos = 30.0;
     ypos = 400.0;
-    xspeed = 2.8;
-    yspeed = 2.8;
+    xspeed = 4;
+    yspeed = 4;
     xdirection = 1;
     ydirection = 1;
   
