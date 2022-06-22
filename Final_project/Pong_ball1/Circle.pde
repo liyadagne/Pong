@@ -8,6 +8,7 @@ public class Circle{
   
   int xdirection;  // Left or Right
   int ydirection;
+int r=0, g=0, b=0;
 
   public Circle(){
     rad = 20;
@@ -23,7 +24,10 @@ public class Circle{
   public void drawCircle(){
     noStroke();
    // ellipseMode(RADIUS);
-    fill(255,255,255);
+   r = int(random(0, 255));
+  g = int(random(0, 255));
+  b = int(random(0, 255));
+  fill(r, g, b);
     // Update the position of the shape
     xpos = xpos + ( xspeed * xdirection );
     ypos = ypos + ( yspeed * ydirection );
