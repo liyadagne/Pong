@@ -31,19 +31,19 @@ pa.movePadle();
 }
 
 void keyPressed(){
- if (keyCode==RIGHT){
+ if (keyCode==68){
    pa.directionChange("right");
      
  }
-   if(keyCode==LEFT){
+   if(keyCode==65){
    pa.directionChange("Left");
  
 }
-if (keyCode==68){
+if (keyCode==RIGHT){
    pb.directionChange("right");
      
  }
- if (keyCode==65){
+ if (keyCode==LEFT){
    pb.directionChange("Left");
      
  }
