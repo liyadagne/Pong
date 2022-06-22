@@ -17,12 +17,13 @@ public class Circle{
     yspeed = 2.8;
     xdirection = 1;
     ydirection = 1;
+  
   }
   
   public void drawCircle(){
     noStroke();
    // ellipseMode(RADIUS);
-  
+    fill(255,255,255);
     // Update the position of the shape
     xpos = xpos + ( xspeed * xdirection );
     ypos = ypos + ( yspeed * ydirection );
