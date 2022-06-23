@@ -85,6 +85,7 @@ float ran3=random(-2,-3);
     if (xpos > width-rad || xpos < rad) {
       xdirection *= -1;
     }
+<<<<<<< HEAD
   //if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
      //  xdirection *= ran;//-1
        // ydirection *=-1;//-1
@@ -101,6 +102,11 @@ float ran3=random(-2,-3);
       xdirection *= ran;//-1
         ydirection *=-1;//-1
         ran=ran*ran;
+=======
+    if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
+       xdirection *= -1;
+        ydirection *= -1;
+>>>>>>> 6cf7e8ab44df73b4fd815348d5f9d69d44756e97
     }
  if(xpos>xb&&xpos<xb+150&&ypos>=740&&ypos<=745){
        xdirection *=ran;//-1
@@ -137,6 +143,7 @@ float ran3=random(-2,-3);
     //if (ypos > height-rad || ypos < rad) {
     //  ydirection *= -1;
     //}
+<<<<<<< HEAD
 
 
 
@@ -146,6 +153,11 @@ float ran3=random(-2,-3);
 /*if(xpos>xb&&xpos<xb+50&&ypos>=740&&ypos<=745){
        xdirection *=ran1;//-1
        ydirection *=-1;//-1
+=======
+ if(xpos>xb&&xpos<xb+150&&ypos>=740&&ypos<=745){
+       xdirection *= -1;
+       ydirection *= -1;
+>>>>>>> 6cf7e8ab44df73b4fd815348d5f9d69d44756e97
     }
      if(xpos>xb+50&&xpos<xb+100&&ypos>=740&&ypos<=745){
        xdirection *= ran1;//-1
@@ -206,6 +218,7 @@ public void drawPadlea(){
    }
    public void movePadlea(){
      if (currentDirectiona == "right"){
+<<<<<<< HEAD
        xa = xa + 5;
         }else if(currentDirectiona == "Left"){
       xa = xa - 5; 
@@ -215,6 +228,17 @@ public void drawPadlea(){
         }
          if(xa<0){
         xa=xa+5;
+=======
+       xa = xa + 6;
+        }else if(currentDirectiona == "Left"){
+      xa = xa - 6; 
+        }
+         if(xa>650){
+        xa=xa-6;
+        }
+         if(xa<0){
+        xa=xa+6;
+>>>>>>> 6cf7e8ab44df73b4fd815348d5f9d69d44756e97
         }
    }
 public void directionChangea(String j){
@@ -233,6 +257,7 @@ public void directionChangea(String j){
    }
    public void movePadleb(){
      if (currentDirectionb == "right"){
+<<<<<<< HEAD
        xb = xb + 5;
         }else if(currentDirectionb == "Left"){
       xb = xb - 5; 
@@ -242,6 +267,17 @@ public void directionChangea(String j){
         }
          if(xb<0){
         xb=xb+5;
+=======
+       xb = xb + 6;
+        }else if(currentDirectionb == "Left"){
+      xb = xb - 6; 
+        }
+        if(xb>650){
+        xb=xb-6;
+        }
+         if(xb<0){
+        xb=xb+6;
+>>>>>>> 6cf7e8ab44df73b4fd815348d5f9d69d44756e97
         }
    }
 public void directionChangeb(String k){

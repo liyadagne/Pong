@@ -27,6 +27,9 @@ pc.movePadlea();
 
  pc.drawCircle();
  pc.gg();
+ 
+ 
+ 
 }
 
 void keyPressed(){
