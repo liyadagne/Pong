@@ -131,15 +131,15 @@ public void drawPadlea(){
    }
    public void movePadlea(){
      if (currentDirectiona == "right"){
-       xa = xa + 5;
+       xa = xa + 6;
         }else if(currentDirectiona == "Left"){
-      xa = xa - 5; 
+      xa = xa - 6; 
         }
          if(xa>650){
-        xa=xa-5;
+        xa=xa-6;
         }
          if(xa<0){
-        xa=xa+5;
+        xa=xa+6;
         }
    }
 public void directionChangea(String j){
@@ -158,15 +158,15 @@ public void directionChangea(String j){
    }
    public void movePadleb(){
      if (currentDirectionb == "right"){
-       xb = xb + 5;
+       xb = xb + 6;
         }else if(currentDirectionb == "Left"){
-      xb = xb - 5; 
+      xb = xb - 6; 
         }
         if(xb>650){
-        xb=xb-5;
+        xb=xb-6;
         }
          if(xb<0){
-        xb=xb+5;
+        xb=xb+6;
         }
    }
 public void directionChangeb(String k){

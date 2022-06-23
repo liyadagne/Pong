@@ -27,23 +27,26 @@ pc.movePadlea();
 
  pc.drawCircle();
  pc.gg();
+ 
+ 
+ 
 }
 
 void keyPressed(){
 
- if (keyCode==RIGHT){
+ if (keyCode==68){
    pc.directionChangea("right");
      
  }
-   if(keyCode==LEFT){
+   if(keyCode==65){
    pc.directionChangea("Left");
  
 }
-if (keyCode==68){
+if (keyCode==RIGHT){
    pc.directionChangeb("right");
      
  }
- if (keyCode==65){
+ if (keyCode==LEFT){
    pc.directionChangeb("Left");
 
 
