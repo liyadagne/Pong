@@ -82,14 +82,14 @@ int r=0, g=0, b=0;
     if (xpos > width-rad || xpos < rad) {
       xdirection *= -1;
     }
-    if(xpos>xa&&xpos<xa+100&&ypos<=60&&ypos>=55){
+    if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
        xdirection *= -1;
         ydirection *= -1;
     }
     //if (ypos > height-rad || ypos < rad) {
     //  ydirection *= -1;
     //}
- if(xpos>xb&&xpos<xb+100&&ypos>=740&&ypos<=745){
+ if(xpos>xb&&xpos<xb+150&&ypos>=740&&ypos<=745){
        xdirection *= -1;
        ydirection *= -1;
     }
@@ -127,7 +127,7 @@ public void drawPadlea(){
   
  //currentDirectiona="right";
      fill(0,225,0);
-     rect(xa,ya,100,20);
+     rect(xa,ya,150,20);
    }
    public void movePadlea(){
      if (currentDirectiona == "right"){
@@ -135,7 +135,7 @@ public void drawPadlea(){
         }else if(currentDirectiona == "Left"){
       xa = xa - 2; 
         }
-         if(xa>700){
+         if(xa>650){
         xa=xa-2;
         }
          if(xa<0){
@@ -154,7 +154,7 @@ public void directionChangea(String j){
       
 // currentDirectionb="right";
      fill(0,225,0);
-     rect(xb,yb,100,20);
+     rect(xb,yb,150,20);
    }
    public void movePadleb(){
      if (currentDirectionb == "right"){
@@ -162,7 +162,7 @@ public void directionChangea(String j){
         }else if(currentDirectionb == "Left"){
       xb = xb - 2; 
         }
-        if(xb>700){
+        if(xb>650){
         xb=xb-2;
         }
          if(xb<0){
