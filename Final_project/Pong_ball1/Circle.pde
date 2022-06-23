@@ -31,7 +31,7 @@ int r=0, g=0, b=0;
  xb=250;
  yb=740;
     rad = 20;
-    xpos = 30.0;
+    xpos = 400.0;
     ypos = 400.0;
     xspeed = 4;
     yspeed = 4;
@@ -131,15 +131,15 @@ public void drawPadlea(){
    }
    public void movePadlea(){
      if (currentDirectiona == "right"){
-       xa = xa + 2;
+       xa = xa + 5;
         }else if(currentDirectiona == "Left"){
-      xa = xa - 2; 
+      xa = xa - 5; 
         }
          if(xa>650){
-        xa=xa-2;
+        xa=xa-5;
         }
          if(xa<0){
-        xa=xa+2;
+        xa=xa+5;
         }
    }
 public void directionChangea(String j){
@@ -158,15 +158,15 @@ public void directionChangea(String j){
    }
    public void movePadleb(){
      if (currentDirectionb == "right"){
-       xb = xb + 2;
+       xb = xb + 5;
         }else if(currentDirectionb == "Left"){
-      xb = xb - 2; 
+      xb = xb - 5; 
         }
         if(xb>650){
-        xb=xb-2;
+        xb=xb-5;
         }
          if(xb<0){
-        xb=xb+2;
+        xb=xb+5;
         }
    }
 public void directionChangeb(String k){
