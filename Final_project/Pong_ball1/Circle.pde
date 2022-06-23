@@ -23,7 +23,10 @@ String currentDirectionb;
   
 
 int r=0, g=0, b=0;
-
+float ran=random(1,1.001);
+float ran1=random(0,-1);
+float ran2=random(-1,-2);
+float ran3=random(-2,-3);
 
   public Circle(){
        xa=250;
@@ -31,7 +34,7 @@ int r=0, g=0, b=0;
  xb=250;
  yb=740;
     rad = 20;
-    xpos = 30.0;
+    xpos = 400.0;
     ypos = 400.0;
     xspeed = 4;
     yspeed = 4;
@@ -69,10 +72,10 @@ int r=0, g=0, b=0;
   public void drawCircle(){
     noStroke();
    // ellipseMode(RADIUS);
-   r = int(random(0, 255));
-  g = int(random(0, 255));
-  b = int(random(0, 255));
-  fill(r, g, b);
+  // r = int(random(0, 255));
+//  g = int(random(0, 255));
+ // b = int(random(0, 255));
+ // fill(r, g, b);
     // Update the position of the shape
     xpos = xpos + ( xspeed * xdirection );
     ypos = ypos + ( yspeed * ydirection );
@@ -82,17 +85,89 @@ int r=0, g=0, b=0;
     if (xpos > width-rad || xpos < rad) {
       xdirection *= -1;
     }
-    if(xpos>xa&&xpos<xa+100&&ypos<=60&&ypos>=55){
-       xdirection *= -1;
-        ydirection *= -1;
+  //if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
+     //  xdirection *= ran;//-1
+       // ydirection *=-1;//-1
+   // }
+ // if(xpos>xb&&xpos<xb+150&&ypos>=740&&ypos<=745){
+     //  xdirection *=ran;//-1
+      // ydirection *=-1;
+ // }//-1
+   
+   
+   
+   
+    if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
+      xdirection *= ran;//-1
+        ydirection *=-1;//-1
+        ran=ran*ran;
     }
+ if(xpos>xb&&xpos<xb+150&&ypos>=740&&ypos<=745){
+       xdirection *=ran;//-1
+      ydirection *=-1;
+      ran=ran*ran;
+  }//-1
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  /* if(xpos>xa&&xpos<xa+50&&ypos<=60&&ypos>=55){
+       xdirection *= ran1;//-1
+        ydirection *=-1;//-1
+    }
+    
+    if(xpos>xa+50&&xpos<xa+100&&ypos<=60&&ypos>=55){
+       xdirection *= ran2;//-1
+        ydirection *=-1;//-1
+    }
+    if(xpos>xa+100&&xpos<xa+150&&ypos<=60&&ypos>=55){
+       xdirection *=ran3;//-1
+        ydirection *=-1;//-1
+    }*/
+    
+  
+ 
+    
     //if (ypos > height-rad || ypos < rad) {
     //  ydirection *= -1;
     //}
- if(xpos>xb&&xpos<xb+100&&ypos>=740&&ypos<=745){
-       xdirection *= -1;
-       ydirection *= -1;
+
+
+
+
+
+
+/*if(xpos>xb&&xpos<xb+50&&ypos>=740&&ypos<=745){
+       xdirection *=ran1;//-1
+       ydirection *=-1;//-1
     }
+     if(xpos>xb+50&&xpos<xb+100&&ypos>=740&&ypos<=745){
+       xdirection *= ran1;//-1
+       ydirection *=-1;//-1
+    }
+     if(xpos>xb+100&&xpos<xb+150&&ypos>=740&&ypos<=745){
+       xdirection *= ran3;//-1
+       ydirection *=-1;//-1
+    }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // Draw the shape
     println("X" + xpos);
     println("Y" + ypos);
@@ -127,19 +202,19 @@ public void drawPadlea(){
   
  //currentDirectiona="right";
      fill(0,225,0);
-     rect(xa,ya,100,20);
+     rect(xa,ya,150,20);
    }
    public void movePadlea(){
      if (currentDirectiona == "right"){
-       xa = xa + 2;
+       xa = xa + 5;
         }else if(currentDirectiona == "Left"){
-      xa = xa - 2; 
+      xa = xa - 5; 
         }
-         if(xa>700){
-        xa=xa-2;
+         if(xa>650){
+        xa=xa-5;
         }
          if(xa<0){
-        xa=xa+2;
+        xa=xa+5;
         }
    }
 public void directionChangea(String j){
@@ -154,19 +229,19 @@ public void directionChangea(String j){
       
 // currentDirectionb="right";
      fill(0,225,0);
-     rect(xb,yb,100,20);
+     rect(xb,yb,150,20);
    }
    public void movePadleb(){
      if (currentDirectionb == "right"){
-       xb = xb + 2;
+       xb = xb + 5;
         }else if(currentDirectionb == "Left"){
-      xb = xb - 2; 
+      xb = xb - 5; 
         }
-        if(xb>700){
-        xb=xb-2;
+        if(xb>650){
+        xb=xb-5;
         }
          if(xb<0){
-        xb=xb+2;
+        xb=xb+5;
         }
    }
 public void directionChangeb(String k){
