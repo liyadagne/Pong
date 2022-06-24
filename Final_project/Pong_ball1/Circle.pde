@@ -58,14 +58,14 @@ float ran3=random(-2,-3);
      fill(255,255,255);
      textSize(20);
        textAlign(CENTER);
-       text(" Game Over. Player 1 wins.",400,400);
+       text(" Game Over. ",400,400);
    }
    if(ypos<0){
      background(255,0,0);
      fill(255,255,255);
      textSize(20);
        textAlign(CENTER);
-       text(" Game Over. Player 2 wins.",400,400);
+       text(" Game Over. ",400,400);
    }
   }
  
