@@ -54,6 +54,10 @@ public void gg(){
      yspeed = 4;
      xdirection = 1;
      ydirection = 1;
+     xa=250;
+     ya=40;
+     xb=250;
+     yb=740;
      currentDirectiona="0";
      currentDirectionb="0";
      a=0;
@@ -75,6 +79,10 @@ public void gg(){
      yspeed = 4;
      xdirection = 1;
      ydirection = 1;
+     xa=250;
+     ya=40;
+     xb=250;
+     yb=740;
      currentDirectiona="0";
      currentDirectionb="0";     
      a=0;
