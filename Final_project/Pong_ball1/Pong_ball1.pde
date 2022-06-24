@@ -1,6 +1,6 @@
 
 Circle pc;
-Score_board sb;
+//Score_board sb;
 int y;
 float temp;
 int x;
@@ -10,7 +10,7 @@ void setup(){
   size(800,800);
  
   pc=new Circle();
-  sb = new Score_board();
+//sb = new Score_board();
   background(0,0,0);
   x = 400;
   y = 400;
@@ -30,14 +30,15 @@ pc.movePadlea();
  pc.drawCircle();
 //
  pc.gg();
- 
+ pc.sSA();
+ pc.sSB();
  
 
  
  // Score Board
- sb.drawScore();
- sb.updateA();
- sb.updateB();
+// sb.drawScore();
+ //sb.updateA();
+//sb.updateB();
 // Stashed changes
 }
 

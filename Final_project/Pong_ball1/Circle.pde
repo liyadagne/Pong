@@ -22,11 +22,21 @@ String currentDirectionb;
      
   
 
-int r=0, g=0, b=0;
+int r=0, g=0, bc=0;
 float ran=random(1,1.001);
 float ran1=random(0,-1);
 float ran2=random(-1,-2);
 float ran3=random(-2,-3);
+
+
+
+
+
+  int a=0;
+  int b=0;
+  int c;
+  String showScore;
+
 
   public Circle(){
        xa=250;
@@ -74,8 +84,8 @@ float ran3=random(-2,-3);
    // ellipseMode(RADIUS);
    r = int(random(0, 255));
   g = int(random(0, 255));
-  b = int(random(0, 255));
-  fill(r, g, b);
+  bc = int(random(0, 255));
+  fill(r, g, bc);
     // Update the position of the shape
     xpos = xpos + ( xspeed * xdirection );
     ypos = ypos + ( yspeed * ydirection );
@@ -101,7 +111,9 @@ float ran3=random(-2,-3);
     if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
       xdirection *= ran;//-1
         ydirection *=-1;//-1
-        ran=ran*ran;}
+        ran=ran*ran;
+      a = a + 1; 
+    }
    /* if(xpos>xa&&xpos<xa+150&&ypos<=60&&ypos>=55){
        xdirection *= -1;
         ydirection *= -1;
@@ -111,6 +123,7 @@ float ran3=random(-2,-3);
        xdirection *=ran;//-1
       ydirection *=-1;
       ran=ran*ran;
+      b = b+1; 
   }//-1
    
    
@@ -263,6 +276,35 @@ public void directionChangeb(String k){
 
 
 
+
+
+
+
+
+ public void dS(){
+    sSA();
+    sSB();
+  }
+  
+  public void sSA(){
+    textSize(40);
+    text("Player A: " + a, 560, 300);
+  }
+  
+  public void sSB(){
+    textSize(40);
+    text("Player B: " + b, 560, 500);
+  }
+  
+/*  public void updateA(){
+   
+   a = a + 1; 
+  }
+  
+  public void updateB(){
+   
+   b = b + 1; 
+  }*/
 
 
 
