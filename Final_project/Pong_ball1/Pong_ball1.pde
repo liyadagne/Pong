@@ -1,4 +1,4 @@
-
+Circle spindtTest;
 Circle pc;
 //Score_board sb;
 int y;
