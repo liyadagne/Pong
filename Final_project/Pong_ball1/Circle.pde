@@ -27,9 +27,9 @@ public class Circle{
   String showScore;
   int d=0;
   public Circle(){
-  xa=250;
+  xa=325;
   ya=40;
-  xb=250;
+  xb=325;
   yb=740;
   rad = 20;
   xpos = 400.0;
@@ -54,9 +54,9 @@ public void gg(){
      yspeed = 4;
      xdirection = 1;
      ydirection = 1;
-     xa=250;
+     xa=325;
      ya=40;
-     xb=250;
+     xb=325;
      yb=740;
      currentDirectiona="0";
      currentDirectionb="0";
@@ -79,9 +79,9 @@ public void gg(){
      yspeed = 4;
      xdirection = 1;
      ydirection = 1;
-     xa=250;
+     xa=325;
      ya=40;
-     xb=250;
+     xb=325;
      yb=740;
      currentDirectiona="0";
      currentDirectionb="0";     
