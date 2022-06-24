@@ -109,7 +109,8 @@ public void drawCircle(){
      text("Press Tab to start. ", 400, 330);
      text("Press A&D to control player A. ", 400, 350);
      text("Press Left&Right to control player B. ", 400, 370);
-
+     textSize(100);
+     text("PONG ", 400, 200);
    }
     // Test to see if the shape exceeds the boundaries of the screen
     // If it does, reverse its direction by multiplying by -1
